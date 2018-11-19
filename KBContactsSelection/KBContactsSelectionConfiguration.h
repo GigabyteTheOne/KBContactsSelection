@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "APAddressBook.h"
 
 @class APContact;
 
@@ -41,6 +42,8 @@ typedef NS_ENUM(NSInteger, KBContactsSelectionMode) {
 /* Action */
 @property (strong) NSString * selectButtonTitle;
 @property (strong) KBContactSelectionHandler customSelectButtonHandler;
+
+@property (nonatomic, assign) APContactField contactsFieldMask;
 
 + (KBContactsSelectionConfiguration*)defaultConfiguration;
 

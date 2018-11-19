@@ -22,6 +22,7 @@
     configuration.mailIsHTML = false;
     configuration.mailSubject = @"";
     configuration.messageBody = @"";
+    configuration.contactsFieldMask = APContactFieldName | APContactFieldPhonesWithLabels | APContactFieldEmailsWithLabels | APContactFieldLinkedRecordIDs;
     
     return configuration;
 }
